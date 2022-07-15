@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce-store</title>
+    <script type="text/html" src="{require('index.js')}"></script>
+</head>
+<body>
+    <!-- <h1>Welcome to our e-commerce</h1> -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navbar custom-navbar navbar-expand-lg"> <!--on ajouter custom-navbar pour modifier dans css & navbar-expand-lg pour metter tous ca sur large-->
+                <div class="container">
+                    <div class="navbar-header">
+                        <a href="." class="navbar-brand">  <!--on metter l'image de logo dans un lien car on clique il retourne au page home-->
+                            <img src="./images/abc.jpg" alt="ecommerce-store">
+                        </a>
+                    </div>
+                    <form class="form-inline">
+                        <input type="search" class="form-control costum-form-control" placeholder="search">
+                        <div class="dropdown categories">
+                            <a class="nav-link dropdown-toggle custom-btn" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Choose a category
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown-menu">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" id="men">
+                                            Men
+                                        </label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" id="women">
+                                            Women
+                                        </label>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="search-category" id="kids">
+                                            Kids
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="submit" class="btn search-btn">Search</button>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown dropdown-menu-right">
+                            <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">Store Sections</a>
+                            <ul class="dropdown-menu custom-dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <a class="dropdown-item" href="#">Men</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Women</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Kids</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="search.html" class="nav-link">Advanced search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Connect us</a>
+                        </li>
+                        <li>
+                            <a href="checkout.html" id="btn-shopping-cart" class="btn custom-btn btn-icon"
+                              title="shopping cart" data-toggle="tooltip" data-placement="bottom">
+                                <i class="fas fa-shopping-cart"> </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
